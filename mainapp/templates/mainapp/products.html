@@ -3,7 +3,6 @@
 
 
 {% block css %}
-    <!-- Custom styles for this template -->
     <link href="{% static 'css/products.css' %}" rel="stylesheet">
 {% endblock %}
 
@@ -16,7 +15,7 @@
 
                 <h1 class="my-4">GeekShop</h1>
                 <div class="list-group">
-                    {% for category in ProductCategory %}
+                    {% for category in product_category %}
                         <a href="#" class="list-group-item">{{ category }}</a>
                     {% endfor %}
                 </div>
@@ -86,7 +85,6 @@
 {% endblock %}
 
 {% block footer %}
-    <!-- Footer -->
     <footer class="py-5 bg-dark">
         <div class="container">
             <p class="m-0 text-center text-white">Copyright &copy; GeekShop {% now "jS \o\f F Y" %}</p>

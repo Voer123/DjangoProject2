@@ -13,6 +13,6 @@ def products(request):
     content = {
         'title': 'GeekShop - Товар',
         'products': Product.objects.all(),
-        'ProductCategory': ProductCategory.objects.all(),
+        'product_category': ProductCategory.objects.all(),
     }
     return render(request, 'mainapp/products.html', content)
